@@ -21,7 +21,6 @@ class InputBar extends Component {
 
     this.props.calculateTotal(this.state.amount);
     this.setState({ amount: "" });
-
   }
 
   render() {
