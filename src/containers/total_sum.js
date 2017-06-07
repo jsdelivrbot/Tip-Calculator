@@ -8,7 +8,6 @@ class TotalSum extends Component {
       price = price + Number(eachAmount.amount);
     });
     return price.toFixed(2);
-
   }
 
   render() {
