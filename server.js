@@ -10,4 +10,4 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port);
-console.log("server staterd");
+console.log("Server Started");

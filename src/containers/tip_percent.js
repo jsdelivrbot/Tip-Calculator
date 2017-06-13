@@ -82,8 +82,4 @@ function mapStateToProps(state) {
   };
 }
 
-// function mapDispatchToProps(dispatch) {
-//   return bindActionCreators({ tipPercentage }, dispatch);
-// }
-
 export default connect(mapStateToProps, { tipPercentage })(TipPercent);
