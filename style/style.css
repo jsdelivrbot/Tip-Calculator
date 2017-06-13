@@ -2,3 +2,12 @@
   margin: 30px;
   font-size: 30px;
 }
+
+.tip-box {
+  cursor: pointer;
+}
+
+.each-amount {
+  display: inline-block;
+  margin-right: 5px;
+}
