@@ -1,7 +1,6 @@
 export const FETCH_PRICES = "FETCH_PRICES";
 export const PERCENTAGE = "PERCENTAGE";
 export const STATE_TAX = "STATE_TAX";
-export const PRICE_SUM = "PRICE_SUM";
 
 let amountId = 0;
 
