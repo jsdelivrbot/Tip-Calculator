@@ -11,10 +11,13 @@ export default class App extends Component {
     return (
       <div>
         <InputBar />
-        <PriceList />
-
-        <StateTax />
-        <TipPercent />
+        <div className="container middle-area">
+          <div className="row">
+            <PriceList />
+            <StateTax />
+            <TipPercent />
+          </div>
+        </div>
         <FinalAmount />
       </div>
     );

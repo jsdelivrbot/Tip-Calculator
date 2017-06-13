@@ -1,13 +1,67 @@
-.input-bar {
-  margin: 30px;
+body {
+  background-color: #9CD3BE !important;
+  text-align: center;
+}
+
+h3 {
+  padding: 15px 0;
+}
+
+.input-container {
+  margin: 50px 0 30px 0;
   font-size: 30px;
 }
 
-.tip-box {
-  cursor: pointer;
+input {
+  border: none;
+  border-radius: 5px !important;
+  padding: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background-color: #EFE74F !important;
+  border: none;
+  border-radius: 5px !important;
+  padding: 0;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.middle-area {
+  width: 100% !important;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.middle-boxes {
+  margin: 35px 0;
 }
 
 .each-amount {
   display: inline-block;
   margin-right: 5px;
+}
+
+.sum-amount {
+  margin-top: 5px;
+}
+
+
+.tip-box {
+  cursor: pointer;
+  border: 1px solid #59CCB1;
+  margin: 0 0 5px 0;
+  padding: 6px;
+}
+
+
+.final-result {
+  text-align: center;
+  padding-top: 50px;
 }

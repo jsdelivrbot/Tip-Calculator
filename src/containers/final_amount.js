@@ -19,21 +19,16 @@ class FinalAmount extends Component {
     const priceTotal = Number(price.toFixed(2));
 
     if (typeof tax == "undefined" || typeof tip == "undefined") {
-      return "Select Tax and Tip Amount";
+      return priceTotal.toFixed(2);
     }
-
-
-
-    console.log(this.props, priceTotal, tax, tip);
-
     return (priceTotal + ((priceTotal * tax)/100) + ((priceTotal * tip)/100)).toFixed(2);
-
   }
 
   render() {
     return (
-      <div className="row">
-        <h3>TOTAL PRICE: $ {this.addPrices(stateTax, tipPercentage)}</h3>
+      <div className="row final-result">
+        <p>Select State and Tip Amount for the Final Price</p>
+        <h3>FINAL PRICE: $ {this.addPrices(stateTax, tipPercentage)}</h3>
       </div>
     );
   }

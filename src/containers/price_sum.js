@@ -15,8 +15,8 @@ class SumTotal extends Component {
 
   render() {
     return (
-      <div className="eachAmount">
-        = {this.addPrices()}
+      <div className="sum-amount">
+        <h4> = {this.addPrices()} </h4>
       </div>
     );
   }
