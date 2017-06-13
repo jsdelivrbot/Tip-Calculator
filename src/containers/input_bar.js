@@ -26,6 +26,7 @@ class InputBar extends Component {
   render() {
     return (
       <div className="container">
+        <h1>TIP AND TAX CALCULATOR</h1>
         <form onSubmit={this.onFormSubmit} className="row input-container">
           <input
             className="col-md-8 input-box"
