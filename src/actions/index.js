@@ -1,6 +1,7 @@
 export const FETCH_PRICES = "FETCH_PRICES";
 export const PERCENTAGE = "PERCENTAGE";
-export const TOTAL_PRICE = "TOTAL_PRICE";
+export const STATE_TAX = "STATE_TAX";
+export const PRICE_SUM = "PRICE_SUM";
 
 let amountId = 0;
 
@@ -12,16 +13,16 @@ export function fetchPrices(amount) {
   }
 }
 
-export function percentage(percent) {
+export function tipPercentage(percent) {
   return {
     type: PERCENTAGE,
     payload: percent
   }
 }
 
-export function totalPrice(price) {
+export function stateTax(tax) {
   return {
-    type: TOTAL_PRICE,
-    payload: price
+    type: STATE_TAX,
+    payload: tax
   }
 }

@@ -1,10 +1,11 @@
-import { PERCENTAGE } from "../actions/index";
+import { STATE_TAX } from "../actions/index";
 
 export default function(state = {}, action) {
+  console.log(action);
   switch (action.type) {
-    case PERCENTAGE:
+    case STATE_TAX:
       return {
-        perc: action.payload
+        tax: action.payload
       };
   }
   return state;
