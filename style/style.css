@@ -6,3 +6,8 @@
 .tip-box {
   cursor: pointer;
 }
+
+.each-amount {
+  display: inline-block;
+  margin-right: 5px;
+}

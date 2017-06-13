@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { calculateTotal } from "../actions/index";
+import { fetchPrices } from "../actions/index";
 
 class InputBar extends Component {
   constructor(props) {
@@ -19,7 +19,7 @@ class InputBar extends Component {
   onFormSubmit(event) {
     event.preventDefault();
 
-    this.props.calculateTotal(this.state.amount);
+    this.props.fetchPrices(this.state.amount);
     this.setState({ amount: "" });
   }
 
@@ -41,7 +41,7 @@ class InputBar extends Component {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ calculateTotal }, dispatch);
+  return bindActionCreators({ fetchPrices }, dispatch);
 }
 
 export default connect(null, mapDispatchToProps)(InputBar);
