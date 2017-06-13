@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { stateTax } from "../actions/index";
-import { fetchPrices } from "../actions/index";
+// import { stateTax } from "../actions/index";
+// import { fetchPrices } from "../actions/index";
 
 
 class StateTax extends Component {
