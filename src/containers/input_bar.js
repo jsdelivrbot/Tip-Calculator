@@ -25,17 +25,17 @@ class InputBar extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onFormSubmit} className="input-group">
-        <input
-          className="col-md-8 input-bar"
-          placeholder="Type amount or final total"
-          value={this.state.amount}
-          onChange={this.onInputChange}
-        />
-        <span className="input-group-btn">
-          <button type="submit" className="btn btn-secondary">Submit</button>
-        </span>
-      </form>
+      <div className="container">
+        <form onSubmit={this.onFormSubmit} className="row input-container">
+          <input
+            className="col-md-8 input-box"
+            placeholder="Prices"
+            value={this.state.amount}
+            onChange={this.onInputChange}
+          />
+          <button type="submit" className="col-md-4 submit-button">Submit</button>
+        </form>
+      </div>
     );
   }
 }

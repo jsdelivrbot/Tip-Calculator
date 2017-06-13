@@ -16,7 +16,7 @@ class PriceList extends Component {
 
   render() {
     return (
-      <div className="col-md-4">
+      <div className="col-md-4 middle-boxes">
         <h3>Price</h3>
         {this.renderAmounts()}
         <SumTotal />

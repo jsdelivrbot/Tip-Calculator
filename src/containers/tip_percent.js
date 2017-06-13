@@ -31,35 +31,44 @@ class TipPercent extends Component {
 
   render() {
     return (
-      <div className="col-md-4">
-        <h3>Select Tip:</h3>
+      <div className="col-md-4 middle-boxes">
+        <h3>Select Tip</h3>
 
-        <div className="tip-box" onClick={() => this.updateTip(0)}>
-          0% - $ {this.calculateTip(0)}
-        </div>
+        <div className="row">
+          <div className="col-md-6">
+            <div className="tip-box" onClick={() => this.updateTip(0)}>
+              0% - $ {this.calculateTip(0)}
+            </div>
 
-        <div className="tip-box" onClick={() => this.updateTip(10)}>
-          10% - $ {this.calculateTip(10)}
-        </div>
+            <div className="tip-box" onClick={() => this.updateTip(10)}>
+              10% - $ {this.calculateTip(10)}
+            </div>
 
-        <div className="tip-box" onClick={() => this.updateTip(15)}>
-          15% - $ {this.calculateTip(15)}
-        </div>
+            <div className="tip-box" onClick={() => this.updateTip(15)}>
+              15% - $ {this.calculateTip(15)}
+            </div>
 
-        <div className="tip-box" onClick={() => this.updateTip(18)}>
-          18% - $ {this.calculateTip(18)}
-        </div>
+            <div className="tip-box" onClick={() => this.updateTip(18)}>
+              18% - $ {this.calculateTip(18)}
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div className="tip-box" onClick={() => this.updateTip(20)}>
+              20% - $ {this.calculateTip(20)}
+            </div>
 
-        <div className="tip-box" onClick={() => this.updateTip(20)}>
-          20% - $ {this.calculateTip(20)}
-        </div>
+            <div className="tip-box" onClick={() => this.updateTip(22)}>
+              22% - $ {this.calculateTip(22)}
+            </div>
 
-        <div className="tip-box" onClick={() => this.updateTip(25)}>
-          25% - $ {this.calculateTip(25)}
-        </div>
+            <div className="tip-box" onClick={() => this.updateTip(25)}>
+              25% - $ {this.calculateTip(25)}
+            </div>
 
-        <div className="tip-box" onClick={() => this.updateTip(30)}>
-          30% - $ {this.calculateTip(30)}
+            <div className="tip-box" onClick={() => this.updateTip(30)}>
+              30% - $ {this.calculateTip(30)}
+            </div>
+          </div>
         </div>
 
       </div>
