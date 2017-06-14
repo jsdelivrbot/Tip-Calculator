@@ -29,12 +29,12 @@ class InputBar extends Component {
         <h1>TIP AND TAX CALCULATOR</h1>
         <form onSubmit={this.onFormSubmit} className="row input-container">
           <input
-            className="col-md-8 input-box"
+            className="col-md-6 input-box"
             placeholder="Prices"
             value={this.state.amount}
             onChange={this.onInputChange}
           />
-          <button type="submit" className="col-md-4 submit-button">Submit</button>
+          <button type="submit" className="col-md-6 submit-button">Submit</button>
         </form>
       </div>
     );
