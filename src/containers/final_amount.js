@@ -32,8 +32,8 @@ class FinalAmount extends Component {
   render() {
     return (
       <div className="row final-result">
-        <p>Select State and Tip Percentage above to see the Final Price</p>
-        <h1>Total Price: $ {this.addPrices(stateTax, tipPercentage)}</h1>
+        <h5>Select State and Tip Percentage above to see the Final Price</h5>
+        <h1 className="final-price">Total Price: $ {this.addPrices(stateTax, tipPercentage)}</h1>
       </div>
     );
   }
