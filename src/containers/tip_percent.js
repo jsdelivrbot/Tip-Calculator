@@ -36,12 +36,12 @@ class TipPercent extends Component {
 
         <div className="row">
           <div className="col-md-6">
-            <div className="tip-box" onClick={() => this.updateTip(0)}>
-              0% - $ {this.calculateTip(0)}
-            </div>
-
             <div className="tip-box" onClick={() => this.updateTip(10)}>
               10% - $ {this.calculateTip(10)}
+            </div>
+
+            <div className="tip-box" onClick={() => this.updateTip(12)}>
+              12% - $ {this.calculateTip(12)}
             </div>
 
             <div className="tip-box" onClick={() => this.updateTip(15)}>
