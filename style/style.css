@@ -82,6 +82,10 @@ button:focus {
   margin-bottom: 80px;
 }
 
+.final-result p {
+  padding: 0 5%;
+}
+
 .important {
   color: #467B67;
 }
