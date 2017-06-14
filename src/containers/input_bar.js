@@ -26,11 +26,11 @@ class InputBar extends Component {
   render() {
     return (
       <div className="container">
-        <h1>Tax and Tip Calculator</h1>
+        <h1 className="title">Tax and Tip Calculator</h1>
         <form onSubmit={this.onFormSubmit} className="row input-container">
           <input
             className="col-md-6 input-box"
-            placeholder="Input Prices Here"
+            placeholder="INPUT PRICES HERE"
             value={this.state.amount}
             onChange={this.onInputChange}
           />

@@ -1,11 +1,11 @@
 body {
   background-color: #9CD3BE !important;
   text-align: center;
+  color: #000000 !important;
 }
 
-h1 {
-  padding: 30px 0 15px 0;
-  color: #FFFFFF;
+h1.title {
+  padding: 30px 0 18px 0 !important;
 }
 
 h3 {
@@ -24,7 +24,7 @@ input {
 }
 
 input::placeholder {
-  color: purple;
+  color: red;
 }
 
 input:focus {
@@ -78,13 +78,17 @@ button:focus {
 
 .final-result {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
   margin-bottom: 80px;
 }
 
 .important {
-  color: purple;
+  color: #467B67;
 }
+
+/*.final-price {
+  color: red;
+}*/
 
 @media (max-width: 600px) {
   input {
