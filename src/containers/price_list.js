@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import SumTotal from "./price_sum";
 
 class PriceList extends Component {
 

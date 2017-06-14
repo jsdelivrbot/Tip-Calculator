@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
-// import { tipPercentage } from "../actions/index";
+// import { bindActionCreators } from "redux";
+import { tipPercentage } from "../actions/index";
 // import { fetchPrices } from "../actions/index";
 
 class TipPercent extends Component {
