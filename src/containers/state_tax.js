@@ -19,17 +19,13 @@ class StateTax extends Component {
     });
     const priceTotal = price.toFixed(2);
     const taxSelected = Number(tax);
-
     const totalTax = ((priceTotal * taxSelected)/100).toFixed(2);
-
     return totalTax;
   }
 
   updateTax(percent) {
     const num = Number(percent)
     this.props.stateTax(num);
-
-
   }
 
   render() {
@@ -43,7 +39,7 @@ class StateTax extends Component {
         New Jersey (6.875%) - $ {this.calculateTax(6.875)}
         </div>
         <div className="tip-box" onClick={() => this.updateTax(6)}>
-          Pennsylvania (6%) - $ {this.calculateTax(6)}
+          Pennsylvania (6.00%) - $ {this.calculateTax(6)}
         </div>
         <div className="tip-box" onClick={() => this.updateTax(6.35)}>
           Connecticut (6.35%) - $ {this.calculateTax(6.35)}
