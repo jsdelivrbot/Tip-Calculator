@@ -35,7 +35,7 @@ class StateTax extends Component {
   render() {
     return (
       <div className="col-md-4 middle-boxes">
-        <h3>Select State</h3>
+        <h3 className="important">Select State</h3>
         <div className="tax-box" onClick={() => this.updateTax(8.875)}>
         New York (8.875%) - $ {this.calculateTax(8.875)}
         </div>

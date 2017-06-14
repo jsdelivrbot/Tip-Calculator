@@ -32,7 +32,7 @@ class TipPercent extends Component {
   render() {
     return (
       <div className="col-md-4 middle-boxes">
-        <h3>Select Tip</h3>
+        <h3 className="important">Select Tip</h3>
 
         <div className="row">
           <div className="col-md-6">
