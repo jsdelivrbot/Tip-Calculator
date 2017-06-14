@@ -30,7 +30,7 @@ class InputBar extends Component {
         <form onSubmit={this.onFormSubmit} className="row input-container">
           <input
             className="col-md-6 input-box"
-            placeholder="Prices"
+            placeholder="Input Prices Here"
             value={this.state.amount}
             onChange={this.onInputChange}
           />
