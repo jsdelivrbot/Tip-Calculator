@@ -34,7 +34,7 @@ class InputBar extends Component {
             value={this.state.amount}
             onChange={this.onInputChange}
           />
-          <button type="submit" className="col-md-6 submit-button">Submit</button>
+          <button type="submit" className="col-md-6 submit-button">ADD</button>
         </form>
       </div>
     );
