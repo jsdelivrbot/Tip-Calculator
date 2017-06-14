@@ -10,6 +10,7 @@ class StateTax extends Component {
   constructor(props) {
     super(props);
     this.updateTax.bind(this);
+
   }
 
   calculateTax(tax, fetchPrices) {
@@ -23,25 +24,28 @@ class StateTax extends Component {
     return totalTax;
   }
 
+
+
   updateTax(percent) {
     const num = Number(percent)
     this.props.stateTax(num);
+
   }
 
   render() {
     return (
       <div className="col-md-4 middle-boxes">
         <h3>Select State</h3>
-        <div className="tip-box" onClick={() => this.updateTax(8.875)}>
+        <div className="tax-box" onClick={() => this.updateTax(8.875)}>
         New York (8.875%) - $ {this.calculateTax(8.875)}
         </div>
-        <div className="tip-box" onClick={() => this.updateTax(6.875)}>
+        <div className="tax-box" onClick={() => this.updateTax(6.875)}>
         New Jersey (6.875%) - $ {this.calculateTax(6.875)}
         </div>
-        <div className="tip-box" onClick={() => this.updateTax(6)}>
+        <div className="tax-box" onClick={() => this.updateTax(6)}>
           Pennsylvania (6.00%) - $ {this.calculateTax(6)}
         </div>
-        <div className="tip-box" onClick={() => this.updateTax(6.35)}>
+        <div className="tax-box" onClick={() => this.updateTax(6.35)}>
           Connecticut (6.35%) - $ {this.calculateTax(6.35)}
         </div>
       </div>

@@ -58,7 +58,6 @@ button:focus {
   margin-top: 5px;
 }
 
-
 .tip-box {
   cursor: pointer;
   border: 1px solid #59CCB1;
@@ -66,14 +65,33 @@ button:focus {
   padding: 6px;
 }
 
+.tax-box {
+  cursor: pointer;
+  border: 1px solid #59CCB1;
+  margin: 0 0 5px 0;
+  padding: 6px;
+}
+
+.tax-box:active {
+  background-color: #EFE74F;
+
+}
+/*.selected {
+  cursor: pointer;
+  border: 1px solid #59CCB1;
+  margin: 0 0 5px 0;
+  padding: 6px;
+  background-color: #EFE74F;
+}*/
+
 .final-result {
   text-align: center;
   padding-top: 50px;
   margin-bottom: 80px;
 }
 
-@media(max-width: 600px) {
-  .input-container {
+@media (max-width: 600px) {
+  input {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
