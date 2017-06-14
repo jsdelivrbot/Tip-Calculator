@@ -43,7 +43,7 @@ class StateTax extends Component {
         New Jersey (6.875%) - $ {this.calculateTax(6.875)}
         </div>
         <div className="tip-box" onClick={() => this.updateTax(6)}>
-          Pennsylvania (6%) - $ {this.calculateTax(0)}
+          Pennsylvania (6%) - $ {this.calculateTax(6)}
         </div>
         <div className="tip-box" onClick={() => this.updateTax(6.35)}>
           Connecticut (6.35%) - $ {this.calculateTax(6.35)}

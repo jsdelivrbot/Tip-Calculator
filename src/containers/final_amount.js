@@ -20,8 +20,13 @@ class FinalAmount extends Component {
 
     if (typeof tax == "undefined" && typeof tip == "undefined") {
       return priceTotal.toFixed(2);
+    } else if (typeof tax == "undefined" && typeof tip != "undefined") {
+      return ( priceTotal + ((priceTotal * tip)/100) ).toFixed(2);
+    } else if (typeof tax != "undefined" && typeof tip == "undefined") {
+      return ( priceTotal + ((priceTotal * tax)/100) ).toFixed(2);
     }
-    return (priceTotal + ((priceTotal * tax)/100) + ((priceTotal * tip)/100)).toFixed(2);
+
+    return ( priceTotal + ((priceTotal * tax)/100) + ((priceTotal * tip)/100) ).toFixed(2);
   }
 
   render() {
